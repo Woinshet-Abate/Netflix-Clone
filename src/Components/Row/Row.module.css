@@ -1,0 +1,9 @@
+.row {
+  margin: 20px;
+  color: white;
+}
+.rowPosters {
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+}
