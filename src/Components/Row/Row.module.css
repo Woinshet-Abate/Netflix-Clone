@@ -1,9 +1,29 @@
 .row {
-  margin: 20px;
   color: white;
+  margin-left: 20px;
+  margin-bottom: 40px;
 }
+
+.rowTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
 .rowPosters {
   display: flex;
   overflow-x: scroll;
-  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.rowPoster {
+  max-height: 180px;
+  object-fit: contain;
+  margin-right: 10px;
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+
+.rowPoster:hover {
+  transform: scale(1.08);
 }
