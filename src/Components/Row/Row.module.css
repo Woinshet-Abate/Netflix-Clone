@@ -1,27 +1,36 @@
+/* Row.module.css */
+
 .row {
-  color: white;
   margin-left: 20px;
-  margin-bottom: 40px;
+  color: white;
 }
 
 .rowTitle {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
 .rowPosters {
   display: flex;
   overflow-x: scroll;
-  padding-bottom: 10px;
+  overflow-y: hidden;
+  padding: 20px 0;
+  gap: 10px;
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar */
+.rowPosters::-webkit-scrollbar {
+  display: none;
 }
 
 .rowPoster {
-  max-height: 180px;
+  width: 160px;
   object-fit: contain;
-  margin-right: 10px;
-  border-radius: 4px;
-  transition: transform 0.3s;
+  transition: transform 0.2s;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .rowPoster:hover {
